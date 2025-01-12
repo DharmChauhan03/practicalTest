@@ -57,3 +57,18 @@
     background-color: #0e3f60; 
   }
   
+
+
+
+
+  .button-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 768px) {
+    .button-container {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
+  

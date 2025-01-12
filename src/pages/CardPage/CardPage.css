@@ -246,3 +246,22 @@ color: #1d9cd2;
     background-color: #0679b3;
   }
   
+
+
+  .card-page-container {
+    width: 1050px;
+    margin: 20px auto;
+  }
+  
+  @media (max-width: 1024px) {
+    .card-page-container {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-page-container {
+      margin: 10px auto;
+    }
+  }
+  

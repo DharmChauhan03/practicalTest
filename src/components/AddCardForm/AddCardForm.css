@@ -137,3 +137,23 @@
     opacity: 0.9;
   }
   
+
+
+
+
+  .modal-container {
+    width: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-container {
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-container {
+      width: 90%;
+    }
+  }
+  

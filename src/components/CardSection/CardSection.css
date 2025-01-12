@@ -68,3 +68,18 @@
     background-color: #717171;
   }
   
+
+
+
+
+  .card-section {
+    width: 600px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-section {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

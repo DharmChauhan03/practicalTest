@@ -56,3 +56,27 @@
     color: #0073e6;
   }
   
+
+
+  .navbar {
+    height: 45px;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  

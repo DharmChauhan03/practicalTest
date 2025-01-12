@@ -91,3 +91,29 @@
     margin-top: 25px;
   }
   
+
+
+
+  .credit-card {
+    width: 340px;
+    height: 180px;
+  }
+  
+  @media (max-width: 768px) {
+    .credit-card {
+      width: 240px;
+      height: 130px;
+      font-size: 14px;
+    }
+
+    
+  }
+  
+  @media (max-width: 480px) {
+    .credit-card {
+      width: 100%;
+      height: auto;
+      padding: 10px;
+    }
+  }
+  

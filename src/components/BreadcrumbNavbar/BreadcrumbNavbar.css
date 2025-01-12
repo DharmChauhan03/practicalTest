@@ -33,3 +33,22 @@
     cursor: default;
   }
   
+
+
+  .breadcrumb-navbar {
+    padding: 15px 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrumb-navbar {
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .breadcrumb-navbar {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  
