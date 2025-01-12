@@ -1,0 +1,35 @@
+.breadcrumb-navbar {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    padding: 15px 40px;
+    font-size: 14px;
+    color: #0d4264;
+    background-color: #ebeff1;
+    z-index: -1;
+    position: sticky;
+    width: 100%;
+  }
+  
+  .page-name {
+    margin-right: 5px;
+    cursor: pointer;
+    color: #0d4264;
+  }
+  
+  .page--name:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb-icon {
+    font-size: 12;
+    margin: 0 5px;
+    color: #0d4264;
+  }
+  
+  .page-name.active {
+    font-weight: bold;
+    color: #333;
+    cursor: default;
+  }
+  
