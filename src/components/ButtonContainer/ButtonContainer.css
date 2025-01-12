@@ -24,7 +24,7 @@
   }
   
    .action-btn:hover .icon-container{
-    background-color: #0e3f60; /* Hover effect for the icon */
+    background-color: #33a9f8ac; /* Hover effect for the icon */
   }
   
   .icon-container {
@@ -53,5 +53,7 @@
   }
   
 
-  
+  .action-btn.active .icon-container {
+    background-color: #0e3f60; /* Active state color for selected button */
+  }
   

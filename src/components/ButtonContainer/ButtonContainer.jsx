@@ -55,7 +55,7 @@ import DoneIcon from "@mui/icons-material/Done";
 import gpayLogo from "../../assets/gpay.png";
 
 function ButtonContainer({ onButtonClick }) {
-  const [selectedButton, setSelectedButton] = useState("Lock");
+  const [selectedButton, setSelectedButton] = useState();
 
   const handleButtonClick = (buttonName) => {
     setSelectedButton(buttonName);

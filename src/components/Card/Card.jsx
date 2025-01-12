@@ -53,22 +53,24 @@ import hdfcLogo from "../../assets/HDFC-logo.png";
 import LockIcon from "@mui/icons-material/Lock";
 import ArchiveIcon from "@mui/icons-material/Archive";
 import DoneIcon from "@mui/icons-material/Done";
+import gpayTopIcon from "../../assets/gpay-top.png";
 
 function Card({ cardHolder, cardNumber, selectedButton }) {
   const cardStyles = {
+    Normal: { backgroundColor: "#0d3f62", topIcon: ""},
     Lock: { backgroundColor: "#6a93a5", topIcon: <LockIcon className="top-icon" /> },
     Archive: { backgroundColor: "#6a93a5", topIcon: <ArchiveIcon className="top-icon" /> },
     Default: { backgroundColor: "#0fa1dc", topIcon: <DoneIcon className="top-icon" /> },
-    GPay: { backgroundColor: "#4086f5", topIcon: <img src="/path-to-gpay-icon.png" alt="GPay" className="top-icon" /> },
+    GPay: { backgroundColor: "#4086f5", topIcon: <img src={gpayTopIcon} alt="GPay" className="top-icon gpay-top-icon" /> },
   };
 
-  const { backgroundColor, topIcon } = cardStyles[selectedButton] || cardStyles.Lock;
+  const { backgroundColor, topIcon } = cardStyles[selectedButton] || cardStyles.Normal;
 
   return (
     <div className="credit-card" style={{ backgroundColor }}>
       <div className="card-header">
         {topIcon}
-        <img src={hdfcLogo} alt="HDFC Logo" height="16px" width="95px" />
+        <img src={hdfcLogo} alt="HDFC Logo"  height="16px" width="95px" className={selectedButton === "Normal" ? "hdfc-logo-right" : "hdfc-logo-left"} />
       </div>
       <div className="card-body">
         <div className="card-holder">
@@ -76,7 +78,7 @@ function Card({ cardHolder, cardNumber, selectedButton }) {
         </div>
         <div className="card-bottom">
           <div className="card-bottom-left">
-            <h3 className="card-number">{cardNumber}</h3>
+            <h5 className="card-number">{cardNumber}</h5>
             <div className="card-footer">
               <div className="footer-left">
                 <b>Valid Till:</b>&ensp;12/24

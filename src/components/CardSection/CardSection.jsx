@@ -43,7 +43,7 @@ import ButtonContainer from "../ButtonContainer/ButtonContainer";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 
 function CardSection() {
-  const [selectedButton, setSelectedButton] = useState("Lock");
+  const [selectedButton, setSelectedButton] = useState("Normal");
   const [showCardNumber, setShowCardNumber] = useState(false);
 
   const handleButtonClick = (buttonName) => {
@@ -51,9 +51,16 @@ function CardSection() {
   };
 
   const toggleCardNumberVisibility = () => {
-    setShowCardNumber((prev) => !prev);
+    setShowCardNumber((prev) => !prev); // Toggle visibility between true and false
+    setSelectedButton((prev) => (prev === "Normal" ? "Normal" : "Normal")); // Toggle background color
   };
 
+    const handleShowCardNumber = () => {
+      setSelectedButton("Normal"); // Reset to Normal state
+      setShowCardNumber(true); // Show the card number
+    };
+
+  
   return (
     <div className="card-section">
       {/* Top Section */}
@@ -68,10 +75,11 @@ function CardSection() {
       <div className="card-middle-section">
         <Card
           cardHolder="Dharm Chauhan"
-          cardNumber={showCardNumber ? "1234567812345678" : "123456781234****"}
+          cardNumber={showCardNumber ? "1234  5678  1234  5678" : "**** **** **** 5678"}
           selectedButton={selectedButton}
+          
         />
-        <ButtonContainer onButtonClick={handleButtonClick} />
+        <ButtonContainer  selectedButton={selectedButton} setSelectedButton={setSelectedButton}  onButtonClick={handleButtonClick} />
       </div>
 
       {/* Bottom Section */}

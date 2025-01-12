@@ -16,11 +16,20 @@
   }
 
   
+  
   .top-icon {
     font-size: 12px;
     color: #fffffff7;
   }
-  
+  .gpay-top-icon{
+    height: 10px;
+    width: 20px;
+  }
+
+  .hdfc-logo-right {
+    margin-left: auto; /* Logo on the right (applied when Normal state) */
+  }
+
   .card-type {
     font-size: 18px;
     font-weight: bold;
@@ -31,7 +40,7 @@
   }
   
   .card-number {
-    font-size: 16px;
+    font-size: 12px;
     letter-spacing: 2px;
   }
   
@@ -42,6 +51,9 @@
     margin-bottom: 10px;
   }
   
+  .card-bottom-left{
+    width: 200px;
+  }
 
 
   .card-bottom{
