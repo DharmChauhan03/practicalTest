@@ -22,10 +22,10 @@ function CardPage() {
   return (
     <div className="card-page">
       <div className="card-page-container">
-        <div className="container-header">
+        <div className="container-header"> 
           <ul className="header-menu">
-            <li className="menu-item active-item">Saved Cards</li>
-            <li className="menu-item">GD Cards</li>
+            <li className="menu-item active-item" > <u className="menu-underline"> Saved Cards </u> </li>
+            <li className="menu-item">  GD Cards  </li>
           </ul>
           <div className="add-card-btn" onClick={handleAddCardClick}>
             <AddIcon className="add-icon" /> Add Card
@@ -48,19 +48,17 @@ function CardPage() {
                 <KeyboardArrowDownOutlinedIcon className="down-rounded-icon" />
               </div>
               <div className="body-main">
-                <ul className="transaction-list">
-                  <li className="transaction-list-item"></li>
-                </ul>
+                
               </div>
             </div>
           </div>
           <div className="container-body-right">
             <div className="body-right-top">
-              <div className="body-right-top-header">Credit Card</div>
+              <div className="body-right-top-header"> <u className="underline" > Credit Car</u>ds</div>
               <CardSection />
             </div>
             <div className="body-right-bottom">
-              <div className="body-right-bottom-header">Debit Card</div>
+              <div className="body-right-bottom-header"> <u className="underline" > Debit Car</u>ds</div>
               <CardSection />
             </div>
           </div>

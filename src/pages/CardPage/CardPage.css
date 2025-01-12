@@ -130,6 +130,8 @@
     gap: 10px;
 }
 
+
+
 .container-body-right{
     display: flex;
     flex-direction: column;
@@ -138,10 +140,23 @@
 }
 
 
+.underline{
+    margin-top: 15px;
+    
+    border-color:#1d9cd2 ;
+}
+
+.menu-underline{
+    text-underline-offset: 19px;
+}
+
 .body-right-top-header{
 padding-left: 30px;
 font-size: 20px;
 font-weight: 600;
+text-underline-offset: 6px;
+
+
 color: #1d9cd2;
 }
 
@@ -150,6 +165,7 @@ color: #1d9cd2;
     padding-left: 30px;
     font-size: 20px;
 font-weight: 600;
+text-underline-offset: 6px;
 color: #1d9cd2;
 
     }

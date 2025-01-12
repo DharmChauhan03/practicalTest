@@ -3,13 +3,13 @@
 
 .button-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 15px; /* Space between buttons */
-    background-color: #c2e2ed; /* Light blue background */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
+    background-color: #c2e2ed; 
     padding: 20px;
     border-radius: 5px;
-    width: 180px; /* Fixed width */
-    height: 180px; /* Fixed height */
+    width: 180px;
+    height: 180px; 
     font-family: "Roboto", sans-serif;
     
   }
@@ -19,27 +19,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Space between icon and label */
+    gap: 5px; 
     cursor: pointer;
   }
   
    .action-btn:hover .icon-container{
-    background-color: #33a9f8ac; /* Hover effect for the icon */
+    background-color: #33a9f8ac; 
   }
   
   .icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #10a0dd; /* Blue circular background */
+    background-color: #10a0dd; 
     border-radius: 50%;
-    width: 40px; /* Fixed circular icon size */
-    height: 40px; /* Fixed circular icon size */
+    width: 40px; 
+    height: 40px; 
   }
   
   .icon {
-    font-size: 18px; /* Adjust icon size */
-    color: white; /* White icon color */
+    font-size: 18px; 
+    color: white; 
   }
   .gpay-icon {
     border-radius: 50%;
@@ -47,13 +47,13 @@
   }
   
   .action-btn span {
-    font-size: 12px; /* Text below icon */
+    font-size: 12px; 
     color: #333;
     text-align: center;
   }
   
 
   .action-btn.active .icon-container {
-    background-color: #0e3f60; /* Active state color for selected button */
+    background-color: #0e3f60; 
   }
   
