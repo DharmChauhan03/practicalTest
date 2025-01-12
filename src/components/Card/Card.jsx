@@ -87,7 +87,7 @@ function Card({ cardHolder, cardNumber, selectedButton }) {
             </div>
           </div>
           <div className="card-bottom-right">
-            <img src={mastercardLogo} alt="MasterCardd" height="40px" width="70px" />
+            <img src={mastercardLogo} alt="MasterCard" height="40px" width="70px" />
           </div>
         </div>
       </div>
